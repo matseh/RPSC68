@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90F87EBF26107A8C00493E38 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 90F87EBE26107A8C00493E38 /* main.c */; };
+		90F87ECA26107C8200493E38 /* RPIPCMessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 90F87EC926107C8200493E38 /* RPIPCMessage.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90F87EB926107A8C00493E38 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		90F87EBB26107A8C00493E38 /* RPSC68 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RPSC68; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F87EBE26107A8C00493E38 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		90F87EC726107C8200493E38 /* RPSC68Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSC68Messages.h; sourceTree = "<group>"; };
+		90F87EC826107C8200493E38 /* RPIPCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIPCMessage.h; sourceTree = "<group>"; };
+		90F87EC926107C8200493E38 /* RPIPCMessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RPIPCMessage.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90F87EB826107A8C00493E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90C707D326AD708A00AF053E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				90F87EC726107C8200493E38 /* RPSC68Messages.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		90F87EB226107A8C00493E38 = {
+			isa = PBXGroup;
+			children = (
+				90C707D326AD708A00AF053E /* Headers */,
+				90F87EBD26107A8C00493E38 /* Source */,
+				90F87EBC26107A8C00493E38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90F87EBC26107A8C00493E38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90F87EBB26107A8C00493E38 /* RPSC68 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90F87EBD26107A8C00493E38 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				90F87EC926107C8200493E38 /* RPIPCMessage.c */,
+				90F87EC826107C8200493E38 /* RPIPCMessage.h */,
+				90F87EBE26107A8C00493E38 /* main.c */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90F87EBA26107A8C00493E38 /* RPSC68 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90F87EC226107A8C00493E38 /* Build configuration list for PBXNativeTarget "RPSC68" */;
+			buildPhases = (
+				90C707CD26AD521900AF053E /* Run SC68 Bootstrap */,
+				90C707CE26AD56ED00AF053E /* Build as68 */,
+				90C707CF26AD601200AF053E /* Build unice68 */,
+				90C707D026AD610F00AF053E /* Build file68 */,
+				90C707D126AD61CD00AF053E /* Build libsc68 */,
+				90F87EB726107A8C00493E38 /* Sources */,
+				90F87EB826107A8C00493E38 /* Frameworks */,
+				90F87EB926107A8C00493E38 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPSC68;
+			productName = RPSC68;
+			productReference = 90F87EBB26107A8C00493E38 /* RPSC68 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90F87EB326107A8C00493E38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					90F87EBA26107A8C00493E38 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 90F87EB626107A8C00493E38 /* Build configuration list for PBXProject "RPSC68" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90F87EB226107A8C00493E38;
+			productRefGroup = 90F87EBC26107A8C00493E38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90F87EBA26107A8C00493E38 /* RPSC68 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90C707CD26AD521900AF053E /* Run SC68 Bootstrap */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SC68 Bootstrap";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SC68_SOURCE_DIR)/Makefile.in",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the SC68 bootstrap script to prepare a pristine SVN source tree for running configure scripts.\n# This step requires the autoconf and automake tools.\ncd $SC68_SOURCE_DIR\ntools/svn-bootstrap.sh\n";
+		};
+		90C707CE26AD56ED00AF053E /* Build as68 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build as68";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SC68_INSTALL_DIR)/bin/as68",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$SC68_BUILD_DIR/as68\"\ncd \"$SC68_BUILD_DIR)/as68\"\n\"$SC68_SOURCE_DIR/as68/configure\" \"--prefix=$SC68_INSTALL_DIR\"\nmake\nmake install\n";
+		};
+		90C707CF26AD601200AF053E /* Build unice68 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build unice68";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SC68_INSTALL_DIR)/lib/libunice68.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CFLAGS=\"-O -g -isysroot $SDKROOT -arch x86_64 -arch arm64\"\nexport LDFLAGS=\"-arch x86_64 -arch arm64\"\nmkdir -p \"$SC68_BUILD_DIR/unice68\"\ncd \"$SC68_BUILD_DIR/unice68\"\n\"$SC68_SOURCE_DIR/unice68/configure\" \"--prefix=$SC68_INSTALL_DIR\"\nmake\nmake install\n";
+		};
+		90C707D026AD610F00AF053E /* Build file68 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build file68";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SC68_INSTALL_DIR)/lib/libfile68.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CFLAGS=\"-O -g -isysroot $SDKROOT -arch x86_64 -arch arm64\"\nexport LDFLAGS=\"-arch x86_64 -arch arm64\"\nmkdir -p \"$SC68_BUILD_DIR/file68\"\ncd \"$SC68_BUILD_DIR/file68\"\n\"$SC68_SOURCE_DIR/file68/configure\" \"--prefix=$SC68_INSTALL_DIR\" --without-ao --without-curl\nmake\nmake install\n";
+		};
+		90C707D126AD61CD00AF053E /* Build libsc68 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build libsc68";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SC68_INSTALL_DIR)/lib/libsc68.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CFLAGS=\"-O -g -isysroot $SDKROOT -arch x86_64 -arch arm64\"\nexport LDFLAGS=\"-arch x86_64 -arch arm64\"\n# Needs as68 to be in the path.\nexport PATH=\"$PATH:$SC68_INSTALL_DIR/bin\"\nmkdir -p \"$SC68_BUILD_DIR/libsc68\"\ncd \"$SC68_BUILD_DIR/libsc68\"\n\"$SC68_SOURCE_DIR/libsc68/configure\" \"--prefix=$SC68_INSTALL_DIR\"\nmake\nmake install\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90F87EB726107A8C00493E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F87ECA26107C8200493E38 /* RPIPCMessage.c in Sources */,
+				90F87EBF26107A8C00493E38 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		90F87EC026107A8C00493E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SC68_BUILD_DIR = "$(BUILD_DIR)/sc68/build";
+				SC68_INSTALL_DIR = "$(BUILD_DIR)/sc68";
+				SC68_SOURCE_DIR = "$(PROJECT_DIR)/Source/sc68";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		90F87EC126107A8C00493E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SC68_BUILD_DIR = "$(BUILD_DIR)/sc68/build";
+				SC68_INSTALL_DIR = "$(BUILD_DIR)/sc68";
+				SC68_SOURCE_DIR = "$(PROJECT_DIR)/Source/sc68";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		90F87EC326107A8C00493E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37X379TU43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_BASENAME,
+					HAVE_STDLIB_H,
+					HAVE_STDINT_H,
+					HAVE_STRING_H,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/PrivateHeaders",
+					"$(PROJECT_DIR)/Source/sc68/libsc68",
+					"$(PROJECT_DIR)/Source/sc68/libsc68/sc68",
+					"$(PROJECT_DIR)/Source/sc68/file68",
+					"$(PROJECT_DIR)/Source/sc68/file68/sc68",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SC68_INSTALL_DIR)/lib";
+				OTHER_LDFLAGS = (
+					"-lunice68",
+					"-lfile68",
+					"-lsc68",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		90F87EC426107A8C00493E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37X379TU43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_BASENAME,
+					HAVE_STDLIB_H,
+					HAVE_STDINT_H,
+					HAVE_STRING_H,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/PrivateHeaders",
+					"$(PROJECT_DIR)/Source/sc68/libsc68",
+					"$(PROJECT_DIR)/Source/sc68/libsc68/sc68",
+					"$(PROJECT_DIR)/Source/sc68/file68",
+					"$(PROJECT_DIR)/Source/sc68/file68/sc68",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SC68_INSTALL_DIR)/lib";
+				OTHER_LDFLAGS = (
+					"-lunice68",
+					"-lfile68",
+					"-lsc68",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90F87EB626107A8C00493E38 /* Build configuration list for PBXProject "RPSC68" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F87EC026107A8C00493E38 /* Debug */,
+				90F87EC126107A8C00493E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90F87EC226107A8C00493E38 /* Build configuration list for PBXNativeTarget "RPSC68" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F87EC326107A8C00493E38 /* Debug */,
+				90F87EC426107A8C00493E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90F87EB326107A8C00493E38 /* Project object */;
+}
