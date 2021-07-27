@@ -391,6 +391,8 @@
 					"-lsc68",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SC68_BUILD_DIR = "$(DERIVED_FILES_DIR)/sc68/build";
+				SC68_INSTALL_DIR = "$(DERIVED_FILES_DIR)/sc68";
 			};
 			name = Debug;
 		};
@@ -422,6 +424,8 @@
 					"-lsc68",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SC68_BUILD_DIR = "$(DERIVED_FILES_DIR)/sc68/build";
+				SC68_INSTALL_DIR = "$(DERIVED_FILES_DIR)/sc68";
 			};
 			name = Release;
 		};
