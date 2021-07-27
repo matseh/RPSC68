@@ -58,7 +58,9 @@ void RPSC68PlayerDelete(RPSC68PlayerRef sc68Player)
     if(sc68Player->response)
     {
         RPIPCMessageDelete(sc68Player->response);
-    }    
+    }
+    
+    free(sc68Player);
 }
 
 RPSC68PlayerRef RPSC68PlayerCreate(void)
