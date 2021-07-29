@@ -151,7 +151,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the SC68 bootstrap script to prepare a pristine SVN source tree for running configure scripts.\n# This step requires the autoconf and automake tools.\ncd $SC68_SOURCE_DIR\ntools/svn-bootstrap.sh\n";
+			shellScript = "# Run the SC68 bootstrap script to prepare a pristine SVN source tree for running configure scripts.\n# This step requires the autoconf and automake tools.\n\n# Add homebrew to the path if it is not installed in /usr/local/bin.\nif [ -d /opt/homebrew/bin ]; then\n    export PATH=$PATH:/opt/homebrew/bin\nfi\n\ncd $SC68_SOURCE_DIR\ntools/svn-bootstrap.sh\n";
 		};
 		90C707CE26AD56ED00AF053E /* Build as68 */ = {
 			isa = PBXShellScriptBuildPhase;
