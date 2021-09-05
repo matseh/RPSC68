@@ -208,7 +208,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export CFLAGS=\"-O -g -isysroot $SDKROOT -arch x86_64 -arch arm64\"\nexport LDFLAGS=\"-arch x86_64 -arch arm64\"\nmkdir -p \"$SC68_BUILD_DIR/file68\"\ncd \"$SC68_BUILD_DIR/file68\"\n\"$SC68_SOURCE_DIR/file68/configure\" \"--prefix=$SC68_INSTALL_DIR\" --without-ao --without-curl  --enable-static --disable-shared\nmake\nmake install\n";
+			shellScript = "export CFLAGS=\"-O -g -isysroot $SDKROOT -arch x86_64 -arch arm64\"\nexport LDFLAGS=\"-arch x86_64 -arch arm64\"\nmkdir -p \"$SC68_BUILD_DIR/file68\"\ncd \"$SC68_BUILD_DIR/file68\"\n\"$SC68_SOURCE_DIR/file68/configure\" \"--prefix=$SC68_INSTALL_DIR\" --without-z --without-ao --without-curl  --enable-static --disable-shared\nmake\nmake install\n";
 		};
 		90C707D126AD61CD00AF053E /* Build libsc68 */ = {
 			isa = PBXShellScriptBuildPhase;
